@@ -155,6 +155,7 @@
 ############### ///////////////// ###############
 
 import os
+import argparse
 import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
@@ -209,6 +210,10 @@ def adicionar_imagens_excel(arquivo_excel, image_folder):
 
 def importar_csv_e_formatar_excel(arquivo_csv, image_folder):
     """Importa CSV, converte para Excel, redimensiona colunas e adiciona imagens."""
+    if not os.path.exists(arquivo_csv):
+        print(f"Erro: O arquivo '{arquivo_csv}' não foi encontrado.")
+        return
+    
     df = pd.read_csv(arquivo_csv, encoding="utf-8", sep=";")
     
     arquivo_excel = arquivo_csv.replace(".csv", ".xlsx")
@@ -221,7 +226,12 @@ def importar_csv_e_formatar_excel(arquivo_csv, image_folder):
 
     print(f"Arquivo Excel '{arquivo_excel}' criado, formatado e imagens adicionadas com sucesso!")
 
-# Exemplo de uso
-arquivo_csv = 'PDR410.csv'  # Altere para o nome do seu CSV
-image_folder = 'IMAGENS'  # Pasta onde estão as imagens
-importar_csv_e_formatar_excel(arquivo_csv, image_folder)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Converte um arquivo CSV para Excel e formata.")
+    parser.add_argument("arquivo_csv", help="Nome do arquivo CSV a ser convertido")
+    parser.add_argument("--imagens", default="IMAGENS", help="Pasta onde estão as imagens (opcional, padrão: IMAGENS)")
+
+    args = parser.parse_args()
+
+    importar_csv_e_formatar_excel(args.arquivo_csv, args.imagens)
+

@@ -5,10 +5,10 @@ import os
 
 # Caminhos dos arquivos
 input_excel_path = "./PDR410.xlsx"
-img_path = "./images/0131290.bmp"
+# img_path = "./IMAGENS/0131290.BMP"
 output_excel_path = "./teste_planilha.xlsx"
 
-IMAGE_WIDTH = 80  # Definir a largura da imagem
+IMAGE_WIDTH = 80  # Definir a largura da imagemssss
 IMAGE_HEIGHT = 80  # Definir a altura da imagem
 
 # Carregar o arquivo Excel
@@ -21,24 +21,28 @@ ws.column_dimensions['A'].width = 15
 # Percorrer todas as linhas da coluna A (a partir da linha 2)
 for row in range(2, ws.max_row + 1):
     cell_value = ws[f'A{row}'].value  # Obter o valor da célula
+    print(f"Linha {row}: {cell_value}")  # Log do valor da célula
 
     # Se a célula contém um caminho de imagem, substituímos pela imagem desejada
     if cell_value and cell_value.startswith("./IMAGENS/"):  
-        img_path = "./images/0131290.bmp"
-        img = Image(img_path)  # Criar uma nova instância da imagem
-        img.width = IMAGE_WIDTH
-        img.height = IMAGE_HEIGHT
+        img_path = cell_value.strip()
+        if os.path.exists(img_path):   
+            img = Image(img_path)  # Criar uma nova instância da imagem
+            img.width = IMAGE_WIDTH
+            img.height = IMAGE_HEIGHT
 
-        # Definir a posição da imagem no centro da célula (ajuste de deslocamento)
-        cell = ws[f'A{row}']
-        cell_coordinate = cell.coordinate  # Exemplo: "A2"
-        ws.add_image(img, cell_coordinate)  # Inserir imagem na célula
+            # Definir a posição da imagem no centro da célula (ajuste de deslocamento)
+            cell = ws[f'A{row}']
+            cell_coordinate = cell.coordinate  # Exemplo: "A2"
+            ws.add_image(img, cell_coordinate)  # Inserir imagem na célula
 
-        # Ajustar altura da linha para exibir corretamente a imagem
-        ws.row_dimensions[row].height = IMAGE_HEIGHT * 0.85
+            # Ajustar altura da linha para exibir corretamente a imagem
+            ws.row_dimensions[row].height = IMAGE_HEIGHT * 0.85
 
-        # Remover o texto da célula para manter apenas a imagem
-        cell.value = ""
+            # Remover o texto da célula para manter apenas a imagem
+            cell.value = ""
+        else:
+            print(f"Arquivo não existe: {img_path}")  # Log do valor da célula
 
 # Criar pasta de saída, se não existir
 os.makedirs(os.path.dirname(output_excel_path), exist_ok=True)
