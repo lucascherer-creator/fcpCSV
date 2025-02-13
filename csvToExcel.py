@@ -54,11 +54,11 @@
 # def importar_csv_e_formatar_excel(arquivo_csv):
 #     """Importa CSV, converte para Excel, redimensiona colunas e adiciona imagens."""
 #     df = pd.read_csv(arquivo_csv, encoding="utf-8", sep=";")
-    
+
 #     arquivo_excel = arquivo_csv.replace(".csv", ".xlsx")
-    
+
 #     df.to_excel(arquivo_excel, index=False, engine="openpyxl")
-    
+
 #     redimensionar_colunas_e_linhas_excel(arquivo_excel)
 #     adicionar_imagens_excel(arquivo_excel)
 
@@ -135,11 +135,11 @@
 # def importar_csv_e_formatar_excel(arquivo_csv, image_folder):
 #     """Importa CSV, converte para Excel, redimensiona colunas e adiciona imagens."""
 #     df = pd.read_csv(arquivo_csv, encoding="utf-8", sep=";")
-    
+
 #     arquivo_excel = arquivo_csv.replace(".csv", ".xlsx")
-    
+
 #     df.to_excel(arquivo_excel, index=False, engine="openpyxl")
-    
+
 #     # Chama as funções para formatação
 #     redimensionar_colunas_e_linhas_excel(arquivo_excel)
 #     adicionar_imagens_excel(arquivo_excel, image_folder)
@@ -213,13 +213,13 @@ def importar_csv_e_formatar_excel(arquivo_csv, image_folder):
     if not os.path.exists(arquivo_csv):
         print(f"Erro: O arquivo '{arquivo_csv}' não foi encontrado.")
         return
-    
+
     df = pd.read_csv(arquivo_csv, encoding="utf-8", sep=";")
-    
+
     arquivo_excel = arquivo_csv.replace(".csv", ".xlsx")
-    
+
     df.to_excel(arquivo_excel, index=False, engine="openpyxl")
-    
+
     # Chama as funções para formatação
     redimensionar_colunas_e_linhas_excel(arquivo_excel)
     adicionar_imagens_excel(arquivo_excel, image_folder)
@@ -234,4 +234,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     importar_csv_e_formatar_excel(args.arquivo_csv, args.imagens)
-
