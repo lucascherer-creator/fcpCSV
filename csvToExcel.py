@@ -4,7 +4,7 @@ import pandas as pd
 from os.path import exists
 # from openpyxl import Workbook
 from openpyxl import Workbook, load_workbook
-from openpyxl.drawing.image import Image
+    from openpyxl.drawing.image import Image
 
 
 def ajustarColunas(arquivo_excel):
