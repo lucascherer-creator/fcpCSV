@@ -2,7 +2,7 @@ import os, sys
 import pandas as pd
 
 from os.path import exists
-from openpyxl import Workbook
+# from openpyxl import Workbook
 from openpyxl import Workbook, load_workbook
 from openpyxl.drawing.image import Image
 
@@ -44,40 +44,53 @@ def adicionarImagensExcel(arquivo_excel):
     IMAGE_WIDTH = 200  # Definir a largura da imagem
     IMAGE_HEIGHT = 200  # Definir a altura da imagem
 
+    SIZE = 128, 128
+
     # Ajustar largura da coluna e altura das linhas para exibir a imagem corretamente
-    ws.column_dimensions['A'].width = 15
+    ws.column_dimensions['A'].width = 30
+
+    seqAnterior = 0
 
     # Percorrer todas as linhas da coluna A (a partir da linha 2)
     for row in range(2, ws.max_row + 1):
-        cell_value = ws[f'A{row}'].value  # Obter o valor da célula
-        # print(f"Linha {row}: {cell_value}")  # Log do valor da célula
+        seqAtual =ws[f'D{row}'].value
 
-        # Se a célula contém um caminho de imagem, substituímos pela imagem desejada
-        if cell_value:
-            img_path = cell_value.strip()
-            # img_path = r"D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP"
-            # print(f"Imagem: {img_path}")
-            if os.path.exists(img_path):
-                # print(f"Arquivo existe: {img_path}")  # Log do valor da célula
+        if seqAtual != seqAnterior:
+            cell_value = ws[f'A{row}'].value  # Obter o valor da célul
 
-                img = Image(img_path)  # Criar uma nova instância da imagem
-                img.width = IMAGE_WIDTH
-                img.height = IMAGE_HEIGHT
+            # Se a célula contém um caminho de imagem, substituímos pela imagem desejada
+            if cell_value:
+                img_path = cell_value.strip()
+                # img_path = r"D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP"
+                # print(f"Imagem: {img_path}")
+                if os.path.exists(img_path):
+                    # print(f"Arquivo existe: {img_path}")  # Log do valor da célula
 
-                # Definir a posição da imagem no centro da célula (ajuste de deslocamento)
+                    img = Image(img_path)  # Criar uma nova instância da imagem
+                    # img = img.resize(SIZE, PILImage.ANTIALIAS)
+
+                    img.width = IMAGE_WIDTH
+                    # img.height = IMAGE_HEIGHT
+
+                    # Definir a posição da imagem no centro da célula (ajuste de deslocamento)
+                    cell = ws[f'A{row}']
+                    cell_coordinate = cell.coordinate  # Exemplo: "A2"
+                    ws.add_image(img, cell_coordinate)  # Inserir imagem na célula
+
+                    # Ajustar altura da linha para exibir corretamente a imagem
+                    # ws.row_dimensions[row].height = IMAGE_HEIGHT * 0.85
+
+                    # Remover o texto da célula para manter apenas a imagem
+                    cell.value = ""
+
+            seqAnterior = seqAtual
+
+        else:
+            if cell_value:
                 cell = ws[f'A{row}']
                 cell_coordinate = cell.coordinate  # Exemplo: "A2"
-                ws.add_image(img, cell_coordinate)  # Inserir imagem na célula
-
-                # Ajustar altura da linha para exibir corretamente a imagem
-                ws.row_dimensions[row].height = IMAGE_HEIGHT * 0.85
-
-                # Remover o texto da célula para manter apenas a imagem
                 cell.value = ""
-            # else:
-            #     print(f"Arquivo não existe: {img_path}")  # Log do valor da célulaY
-        # else:
-        #     print(f"Não é um caminho de imagem: {cell_value}")
+
 
     # Criar pasta de saída, se necessário (corrigindo o erro)
     output_dir = os.path.dirname(arquivo_excel)
