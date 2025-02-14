@@ -1,28 +1,28 @@
 FOTO;REMESSA;ENTREGA;TALAO;MODELO;PARES;CAMPO;MATERIAL;CONSUMO;SALDO;UNIDADE;Almox;Corte Maq;Corte;Pre-costura;Costura;Revisao Costura;Pre Cont.Interno;Distribuicao;Montagem
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;CABEDAL        ;NEW TOSC CEREJA - TB                    ;      0,8288;      0,0000;M2
-./IMAGENS/0131291.BMP                        ;018807;14/02/2025;001;0131290;0007;COST. PALMILHA ;NA COR                                  ;      0,0007;      0,0000;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SALTO          ;NEW TOSC CEREJA - TB                    ;      0,1556;      0,0000;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1301;    256,6400;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;FORRO SILK     ;SILK ROSADO                             ;      0,3889;    196,8900;ML.
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,2155;  1.081,8800;ML
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SALTO ==>      ;.                                       ;      7,0000;  1.081,8800;PRS
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SOLADO         ;SOLA SOFT NUDE/BEIRA NEW NATURAL        ;      0,2795;    173,0000;PLACA
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;               ;ESP BANANINHA REF7960                   ;      7,0000;  7.570,0000;.pr
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;CABEDAL        ;NEW TOSC PRETO - TB                     ;      1,0569;    265,3800;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;COST. PALMILHA ;NA COR                                  ;      0,0009;      0,0000;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SALTO          ;NEW TOSC PRETO - TB                     ;      0,1985;    265,3800;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1659;    256,6400;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;FORRO SILK     ;SILK ROSADO                             ;      0,4959;    196,8900;ML.
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,2748;  1.081,8800;ML
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SALTO ==>      ;.                                       ;      9,0000;  1.081,8800;PRS
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SOLADO         ;SOLA SOFT NUDE/BEIRA PRETA              ;      0,3593;    173,0000;PLACA
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;               ;ESP BANANINHA REF7960                   ;      9,0000;  7.570,0000;.pr
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;CABEDAL        ;NEW TOSC OFF WHITE - TB                 ;      0,7009;    464,8700;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;COST. PALMILHA ;NA COR                                  ;      0,0006;      0,0000;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SALTO          ;NEW TOSC OFF WHITE - TB                 ;      0,1316;    464,8700;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1100;    256,6400;M2
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;FORRO SILK     ;SILK ROSADO                             ;      0,3288;    196,8900;ML.
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,1823;  1.081,8800;ML
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SALTO ==>      ;.                                       ;      6,0000;  1.081,8800;PRS
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SOLADO         ;SOLA SOFT NUDE/BEIRA NEW NATURAL        ;      0,2395;    173,0000;PLACA
-./IMAGENS/0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;               ;ESP BANANINHA REF7960                   ;      6,0000;  7.570,0000;.pr
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;CABEDAL        ;NEW TOSC CEREJA - TB                    ;      0,8288;      0,0000;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;COST. PALMILHA ;NA COR                                  ;      0,0007;      0,0000;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SALTO          ;NEW TOSC CEREJA - TB                    ;      0,1556;      0,0000;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1301;    256,6400;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;FORRO SILK     ;SILK ROSADO                             ;      0,3889;    196,8900;ML.
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,2155;  1.081,8800;ML
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SALTO ==>      ;.                                       ;      7,0000;  1.081,8800;PRS
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;SOLADO         ;SOLA SOFT NUDE/BEIRA NEW NATURAL        ;      0,2795;    173,0000;PLACA
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;001;0131290;0007;               ;ESP BANANINHA REF7960                   ;      7,0000;  7.570,0000;.pr
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;CABEDAL        ;NEW TOSC PRETO - TB                     ;      1,0569;    265,3800;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\6060500.BMP                        ;018807;14/02/2025;002;0131290;0009;COST. PALMILHA ;NA COR                                  ;      0,0009;      0,0000;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SALTO          ;NEW TOSC PRETO - TB                     ;      0,1985;    265,3800;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1659;    256,6400;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;FORRO SILK     ;SILK ROSADO                             ;      0,4959;    196,8900;ML.
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,2748;  1.081,8800;ML
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SALTO ==>      ;.                                       ;      9,0000;  1.081,8800;PRS
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;SOLADO         ;SOLA SOFT NUDE/BEIRA PRETA              ;      0,3593;    173,0000;PLACA
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;002;0131290;0009;               ;ESP BANANINHA REF7960                   ;      9,0000;  7.570,0000;.pr
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;CABEDAL        ;NEW TOSC OFF WHITE - TB                 ;      0,7009;    464,8700;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;COST. PALMILHA ;NA COR                                  ;      0,0006;      0,0000;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SALTO          ;NEW TOSC OFF WHITE - TB                 ;      0,1316;    464,8700;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;AVESSO         ;AVESSO SINT ROSADO                      ;      0,1100;    256,6400;M2
+D:\Workspace\Python\fcpCSV\IMAGENS\6060502.BMP                        ;018807;14/02/2025;003;0131290;0006;FORRO SILK     ;SILK ROSADO                             ;      0,3288;    196,8900;ML.
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;PALMILHA       ;DIVA ROSADO (SEM DUB)                   ;      0,1823;  1.081,8800;ML
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SALTO ==>      ;.                                       ;      6,0000;  1.081,8800;PRS
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;SOLADO         ;SOLA SOFT NUDE/BEIRA NEW NATURAL        ;      0,2395;    173,0000;PLACA
+D:\Workspace\Python\fcpCSV\IMAGENS\0131290.BMP                        ;018807;14/02/2025;003;0131290;0006;               ;ESP BANANINHA REF7960                   ;      6,0000;  7.570,0000;.pr
