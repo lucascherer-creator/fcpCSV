@@ -189,3 +189,4 @@ $RECYCLE.BIN/
 # file
 .~lock.*
 *.xls*
+_dist_

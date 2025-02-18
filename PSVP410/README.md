@@ -16,5 +16,5 @@ python .\PSVP410.py .\PDR410.csv
 ## gerar EXE
 
 ```sh
- pyinstaller .\PSVP410.py
+pyinstaller --onefile --clean --noconfirm --add-data "assets;assets" --icon=assets\icone.ico .\PSVP410.py
 ```
