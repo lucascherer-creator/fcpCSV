@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import pandas as pd
 from openpyxl import load_workbook
@@ -71,7 +72,9 @@ def main():
         print(f"Error: File '{csv_file}' not found.")
         sys.exit(1)
 
-    excel_file = csv_file.replace(".csv", ".xlsx")
+    if csv_file.lower().endswith('.csv'):
+        excel_file = csv_file[:-4] + '.xlsx'
+
     convert_csv_to_excel(csv_file, excel_file)
 
 if __name__ == "__main__":
